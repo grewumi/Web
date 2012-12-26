@@ -1,0 +1,22 @@
+
+div.clover{
+		position:relative;
+	}
+div.leaves{
+		height:34px; width:34px; position:relative; z-index:1;
+	}
+i.leave_angleN{
+		-moz-transform:rotate(-45deg);
+	}
+i.leave_angleS{
+		-moz-transform:rotate(135deg);
+	}
+i.leave_angleW{
+		-moz-transform:rotate(-135deg);
+	}
+i.leave_angleE{
+	-moz-transform:rotate(45deg);
+	}
+i.branch{
+		height:40px; width:40px; position:absolute; left:15px; top:-4px;
+	}
