@@ -1,0 +1,114 @@
+/*div实现输入框自适应高度*/
+div.test_box {
+    width: 380px;/*初始宽度*/
+    min-height: 80px;/*初始高度*/
+    max-height: 800px;/*最大高度,超过后不自适应,由滚动条控制*/
+    _height: 120px;/*加下划线的为IE6专有属性(此为高度属性)*/
+    margin-left: auto;/*左外边距自适应*/
+    margin-right: auto;/*右外边距自适应*/
+    padding: 3px;/*内边距*/
+    outline: 0;/*轮廓属性*/
+    border: 1px solid #a0b3d6;/*边框属性*/
+    font-size: 12px;/*字体属性*/
+    word-wrap: break-word;/*CSS3自动换行*/
+    overflow-x: hidden;/*内容水平溢出隐藏*/
+    overflow-y: auto;/*/*内容垂直溢出自适应*/*/
+    _overflow-y: visible;/*加下划线的为IE6专有属性*/
+}
+/*文本域宽度*/
+textarea.coder{
+	margin-left:10px;
+	width:600px;
+	white-space: nowrap;
+}
+/*外框大容器属性*/
+div#wrapper{
+	margin:0px auto;
+	padding:0px;
+	border:0px none;
+	width:966px;
+	text-align:left;
+	/*
+	background-image:url(http://localhost/ideadiscover/images/site_wrapper.gif);/*背景图像*/
+	background-repeat:repeat-y;/*背景图像纵向平铺*/
+	background-position:top left;/*背景图像定位*/
+	background-attachment:scroll;/*背景关联,背景随文档滚动*/ 
+	background-color:transparent;/*背景颜色为透明*/
+}
+/*外框大容器内主页头部和子叶头部样式*/
+div#header,div#header_index{
+	margin:0px 0px 0px 12px;
+	padding:0px;
+	border:0px none;
+	width:937px;
+	height:90px;
+	background-color:rgb(182,182,182);
+	background-repeat:repeat;
+	background-attachment:scroll;
+	background-position:0% 0%;
+}
+/*外框大容器内主页头部和子叶头部a元素和h1元素属样式*/
+div#header a,div#header_index a,div#header_index h1{
+	text-indent:-9999px;/*文本缩进*/
+	margin:0px;
+	padding::0px;
+	border:0px none;
+	overflow:hidden;/*当内容溢出元素框时*/
+}
+/*外框大容器内主页头部和子叶头部a元素未访问和已访问样式*/
+div#header_index a:link,div#header_index a:visited{
+	display:block;
+	width:937px;
+	height:90px;
+	background-image:url(http://localhost/ideadiscover/images/site_head_index.gif);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:left top;
+	background-color:transparent;
+	margin:0px;
+	padding:0px;
+	border:0px none;
+	/*倾斜
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	*/
+}
+/*外框大容器内主页头部和子叶头部a元素鼠标悬停样式*/
+div#header_index a:hover{
+	background-image:url(http://localhost/ideadiscover/images/site_head_index.gif);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:0px -90px;
+	background-color:transparent;
+}
+div#sider{
+	float:left;
+	width:356px;
+	height:100px;
+	margin-top:100px;
+}
+div#footer{
+	clear:both;
+	margin-bottom:20px;
+}
+a:link,a:visited{
+	text-decoration:underline;
+}
+body#homefirst{
+	margin:0px;
+	padding:0px;
+	border:0px none;
+	text-align:center;
+	background-color:rgb(249,249,249);
+	background-image:url(http://localhost/ideadiscover/images/site_holder.gif);
+	background-repeat:repeat-y;/*背景图像纵向平铺*/
+	background-attachment:scroll;/*背景关联,背景随文档滚动*/ 
+	background-position:center top;/*背景图像定位*/
+	font:12px Verdana, Arial, Helvetica, sans-serif; 
+}
+h2{
+	margin-left:10px;
+	width:600px;
+	font-size:16px;
+}
