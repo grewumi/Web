@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/coder.css">
         <link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/apple_list.css">
 		<script type="text/javascript" src="http://localhost/ideadiscover/js/coder.js"></script>
-		<title>主页</title>
+		<title>求职训练营第三天</title>
 	</head>
 <?php
 	//连接数据库

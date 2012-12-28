@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/coder.css">
         <link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/apple_list.css">
 		<script type="text/javascript" src="http://localhost/ideadiscover/js/coder.js"></script>
-		<title>求职训练营第二天</title>
+		<title>求职训练营第五天</title>
 	</head>
 <?php
 	//连接数据库
@@ -22,9 +22,9 @@
 	
 	//存储查询结果(存储类型为数组)
 	//代码内容存储集
-	$result = mysql_query("SELECT `coder_content` FROM `coder_infomation` WHERE `day` = 2 LIMIT 0, 30 ");
+	$result = mysql_query("SELECT `coder_content` FROM `coder_infomation` WHERE `day` = 5 LIMIT 0, 30 ");
 	//代码内容描述存储集
-	$result_title = mysql_query("SELECT `dis_content` FROM `coder_infomation` WHERE `day` = 2 LIMIT 0, 30 ");
+	$result_title = mysql_query("SELECT `dis_content` FROM `coder_infomation` WHERE `day` = 5 LIMIT 0, 30 ");
 	
 	$index=1;
 ?>
@@ -70,126 +70,6 @@
 <?php	
 	$row = mysql_fetch_array($result);
   	echo $row['coder_content'];	
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-	
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>	
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
 ?>
 </textarea>
 
