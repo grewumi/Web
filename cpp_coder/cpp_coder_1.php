@@ -30,16 +30,14 @@
 ?>
 <body id="homefirst">
 
-
-
 <!--外壳-->
 <div id="wrapper">
 
 <!--HEAD-->
 <div id="header_index">
 	<h1 onMouseOver="ddou()">
-    	<a title="w3school 在线教程" href="http://localhost/ideadiscover/">
-        	w3school 在线教程
+    	<a title="Seul's database" href="http://localhost/ideadiscover/">
+        	looking for youself
         </a>
     </h1>
 </div>
