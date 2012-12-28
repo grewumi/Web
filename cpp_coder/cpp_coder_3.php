@@ -22,9 +22,9 @@
 	
 	//存储查询结果(存储类型为数组)
 	//代码内容存储集
-	$result = mysql_query("SELECT `coder_content` FROM `coder_infomation` WHERE `day` = 1 LIMIT 0, 30 ");
+	$result = mysql_query("SELECT `coder_content` FROM `coder_infomation` WHERE `day` = 3 LIMIT 0, 30 ");
 	//代码内容描述存储集
-	$result_title = mysql_query("SELECT `dis_content` FROM `coder_infomation` WHERE `day` = 1 LIMIT 0, 30 ");
+	$result_title = mysql_query("SELECT `dis_content` FROM `coder_infomation` WHERE `day` = 3 LIMIT 0, 30 ");
 	
 	$index=1;
 ?>
@@ -48,7 +48,7 @@
 <div>	
 <?php
 	//包含菜单
-	require "cpp_coder/linker.php";
+	require "linker.php";
 ?>
 </div>
 
@@ -186,36 +186,6 @@
   	echo $row['dis_content'];	
 ?>
 </h2>	
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
-<textarea class="coder">
-<?php
-	$row = mysql_fetch_array($result);
-	echo $row['coder_content'];
-?>
-</textarea>
-
-<!-- 代码内容-->
-<h2>
-<?php
-	echo $index++;echo "  ";	
-	$row = mysql_fetch_array($result_title);
-  	echo $row['dis_content'];	
-?>
-</h2>
 <textarea class="coder">
 <?php
 	$row = mysql_fetch_array($result);

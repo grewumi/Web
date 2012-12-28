@@ -3,7 +3,7 @@
 	<head>
     	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 		<meta http-equiv="Content-Language" content="zh-cn" />
-    	<script type="text/javascript" src="jquery-1.8.3.js"></script>
+    	<script type="text/javascript" src="http://localhost/ideadiscover/js/jquery-1.8.3.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/coder.css">
         <link rel="stylesheet" type="text/css" href="http://localhost/ideadiscover/css/apple_list.css">
 		<script type="text/javascript" src="http://localhost/ideadiscover/js/coder.js"></script>
@@ -46,10 +46,9 @@
 
 <!--各个子页面的链接-->
 <div>	
-	<!--HTML5中定义导航链接标签-->	
-	<nav id="linker">
-    	<a href="http://localhost/ideadiscover/cpp_coder/cpp_coder_1.php" title="cpp_coder">cpp coder</a>
-	</nav>
+<?php
+	require "linker.php";
+?>
 </div>
 
 <!--内容区-->
